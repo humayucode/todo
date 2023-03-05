@@ -1,0 +1,107 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(125deg, rgba(246, 201, 148, 0.943), #e6959afb);
+}
+.container{
+    position: absolute;
+    width: 70%;
+    padding: 30px 30px;
+    min-width: 450px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%
+}
+#newtask{
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10PX;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+#newtask .texx{
+    width: 65%;
+    height: 40px;
+    text-align: center;
+    font-family: 'Nunito', 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight:bold;
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e6959afb;
+
+}
+#newtask input:focus{
+    outline: none;
+    overflow: hidden;
+}
+
+#newtask #push{
+    position: relative;
+    right: 50px;
+    float: right;
+    width: 20%;
+    height: 40px ;
+    border-radius: 5px;
+    border: none;
+    background-color: #e6959afb;
+    font-family:'Nunito', 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 520;
+    cursor: pointer;
+    
+}
+#task{
+    position: relative;
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-radius: 10px ;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+.task{
+    height: 50px;
+    padding: 5px 10px ;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    background-color: #FFFFFF;
+    cursor: pointer  ;
+
+}
+.task span{
+    font-family: 'Nunito', 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 550;
+}
+.task button{
+   color:#e6959afb ;
+   border-style:none ;
+   height: 100%;
+   width: 40px;
+   overflow: hidden;
+   background-color: #fff;
+   outline: none;
+   cursor: pointer;
+}
+.task  i{
+     font-size: 20px;
+}
+.completed{
+    text-decoration: line-through;
+}
